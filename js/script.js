@@ -31,7 +31,7 @@ var places = {
 
     ula: {
         name: "العلا",
-        image: "images/ula.jpg",
+        image: "images/alula.jpg",
         description: "العلا منطقة تاريخية غنية بالآثار القديمة مثل مدائن صالح وجبل الفيل.",
         landmarks: ["مدائن صالح", "جبل الفيل", "البلدة القديمة"]
     },
