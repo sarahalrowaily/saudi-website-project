@@ -178,3 +178,97 @@ header {
     font-weight: bold;
     margin-left: 20px;
 }
+
+/* ===== Final fixes: header + regions layout ===== */
+header {
+    background-color: #0f3d2e;
+    color: white;
+    padding: 15px 45px;
+    text-align: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* links on the left side */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* night mode button beside links, not yellow */
+.mode-btn {
+    position: static;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* search and dropdown under title, aligned right */
+.regions-head {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.regions-head h2 {
+    margin: 0 0 8px 0;
+    text-align: right;
+    font-size: 32px;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* result count on left */
+.result-count {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 20px 20px 0;
+}
+
+/* cards: 3 above, 3 below */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 20px;
+}
+
+.card {
+    width: auto;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
