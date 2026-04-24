@@ -85,3 +85,87 @@ function loadPlaceDetails() {
 if (document.getElementById("place-details")) {
     loadPlaceDetails();
 }
+/* ===== HERO SECTION ===== */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 30px;
+}
+
+.hero-text {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.hero-text h2 {
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #1e5631;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== RIGHT GREEN BOX ===== */
+
+.hero-box {
+    flex: 1;
+    background: linear-gradient(135deg, #1e5631, #2e7d32);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* ===== CARDS ===== */
+
+.info-cards {
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.info-card {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    margin-bottom: 10px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #666;
+}
