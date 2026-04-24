@@ -131,3 +131,19 @@ footer {
     margin-top: 20px;
     color: #666;
 }
+header {
+    position: relative;
+}
+
+.mode-btn {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    padding: 8px 14px;
+    background-color: #d9b36c;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
