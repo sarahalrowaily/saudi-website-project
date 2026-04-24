@@ -8,74 +8,79 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">الرئيسية</a> |
-        <a href="regions.html">معرض المناطق</a>
-    </nav>
-
+<header>
     <h1>معرض المناطق</h1>
 
-    <!-- Filter Buttons -->
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="regions.html">معرض المناطق</a>
+        <a href="details.html">التفاصيل</a>
+    </nav>
+
+    <button onclick="toggleMode()">🌙 Night Mode</button>
+</header>
+
+<main>
+    <h2>معرض المناطق</h2>
+    <p>اختر منطقة من المعرض لعرض التفاصيل.</p>
+
     <button onclick="filterRegions('all')">الكل</button>
     <button onclick="filterRegions('city')">مدن</button>
     <button onclick="filterRegions('nature')">طبيعة</button>
+    <button onclick="filterRegions('heritage')">تاريخية</button>
+    <button onclick="filterRegions('religious')">دينية</button>
 
     <div class="gallery">
 
-        <!-- Riyadh -->
         <div class="card city">
-            <img src="https://source.unsplash.com/300x200/?riyadh" alt="Riyadh">
+            <img src="images/riyadh.jpg" alt="الرياض">
             <h3>الرياض</h3>
             <p>عاصمة المملكة العربية السعودية.</p>
             <a href="details.html?place=riyadh">عرض التفاصيل</a>
         </div>
-        
-        <!-- Al-Ula -->
 
-        <div class="card" data-type="heritage">
+        <div class="card heritage">
+            <img src="images/alula.jpg" alt="العلا">
             <h3>العلا</h3>
             <p>منطقة تاريخية غنية بالآثار.</p>
             <a href="details.html?place=ula">عرض التفاصيل</a>
         </div>
-        
-        <!-- AlKhobar -->
 
-        <div class="card" data-type="city">
+        <div class="card city">
+            <img src="images/khobar.jpg" alt="الخبر">
             <h3>الخبر</h3>
             <p>مدينة ساحلية حديثة ومميزة.</p>
             <a href="details.html?place=khobar">عرض التفاصيل</a>
         </div>
-        
-        <!-- Mecca -->
 
-        <div class="card" data-type="religious">
+        <div class="card religious">
+            <img src="images/mecca.jpg" alt="مكة المكرمة">
             <h3>مكة المكرمة</h3>
             <p>أقدس مدينة في الإسلام.</p>
             <a href="details.html?place=mecca">عرض التفاصيل</a>
         </div>
-        
-        <!-- Tabuk -->
 
-        <div class="card" data-type="nature">
+        <div class="card nature">
+            <img src="images/tabuk.jpg" alt="تبوك">
             <h3>تبوك</h3>
             <p>مدينة شمالية تتميز بطبيعتها.</p>
             <a href="details.html?place=tabuk">عرض التفاصيل</a>
         </div>
-        
-        <!-- Abha -->
-        
+
         <div class="card nature">
-            <img src="https://source.unsplash.com/300x200/?abha" alt="Abha">
+            <img src="images/abha.jpg" alt="أبها">
             <h3>أبها</h3>
             <p>مدينة جبلية رائعة.</p>
             <a href="details.html?place=abha">عرض التفاصيل</a>
         </div>
+
+    </div>
+</main>
+
 <footer>
     © اكتشف السعودية - جامعة الملك سعود
 </footer>
-    </div>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
