@@ -7,7 +7,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-    width: 85%;
+    width: 70%;
     margin: 25px auto 0;
     background-color: #0f3d2e;
     color: white;
@@ -28,9 +28,8 @@ header h1 {
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
@@ -191,4 +190,18 @@ footer {
     padding: 15px;
     margin-top: 20px;
     color: #666;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mode-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-weight: bold;
 }
