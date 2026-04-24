@@ -28,21 +28,41 @@ button {
 
 /* DARK MODE */
 .dark-mode {
-    background-color: #111;
-    color: white;
+    background-color: #0b1020;
+    color: #ffffff;
 }
 
 .dark-mode header {
-    background-color: #000;
+    background-color: #123f2a;
 }
 
+.dark-mode main {
+    background-color: #0b1020;
+}
+
+.dark-mode .hero-text,
+.dark-mode .hero-box,
+.dark-mode .info-card {
+    background: #162033;
+    color: #ffffff;
+}
+
+.dark-mode .hero-text p,
+.dark-mode .info-card p {
+    color: #e5e7eb;
+}
+
+.dark-mode .explore-btn {
+    background-color: #1e5631;
+    color: white;
+}
 /* HERO */
 .hero {
     display: flex;
+    flex-direction: row-reverse;
     gap: 20px;
     padding: 20px;
 }
-
 .hero-text {
     flex: 1;
     background: #eee;
