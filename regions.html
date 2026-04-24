@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>معرض المناطق</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">الرئيسية</a> |
+        <a href="regions.html">معرض المناطق</a>
+    </nav>
+
+    <h1>معرض المناطق</h1>
+
+    <!-- Filter Buttons -->
+    <button onclick="filterRegions('all')">الكل</button>
+    <button onclick="filterRegions('city')">مدن</button>
+    <button onclick="filterRegions('nature')">طبيعة</button>
+
+    <div class="gallery">
+
+        <!-- Riyadh -->
+        <div class="card city">
+            <img src="https://source.unsplash.com/300x200/?riyadh" alt="Riyadh">
+            <h3>الرياض</h3>
+            <p>عاصمة المملكة العربية السعودية.</p>
+            <a href="details.html?place=riyadh">عرض التفاصيل</a>
+        </div>
+
+        <!-- Jeddah -->
+        <div class="card city">
+            <img src="https://source.unsplash.com/300x200/?jeddah" alt="Jeddah">
+            <h3>جدة</h3>
+            <p>مدينة ساحلية جميلة.</p>
+            <a href="details.html?place=jeddah">عرض التفاصيل</a>
+        </div>
+
+        <!-- Abha -->
+        <div class="card nature">
+            <img src="https://source.unsplash.com/300x200/?abha" alt="Abha">
+            <h3>أبها</h3>
+            <p>مدينة جبلية رائعة.</p>
+            <a href="details.html?place=abha">عرض التفاصيل</a>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
