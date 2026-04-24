@@ -17,23 +17,44 @@ function filterRegions(type) {
 var places = {
     riyadh: {
         name: "الرياض",
-        image: "https://source.unsplash.com/600x400/?riyadh",
+        image: "images/riyadh.jpg",
         description: "الرياض هي عاصمة المملكة العربية السعودية وتجمع بين الحداثة والتاريخ.",
         landmarks: ["برج المملكة", "المتحف الوطني", "الدرعية"]
     },
 
-    jeddah: {
-        name: "جدة",
-        image: "https://source.unsplash.com/600x400/?jeddah",
-        description: "جدة مدينة ساحلية تقع على البحر الأحمر وتتميز بتاريخها وأسواقها القديمة.",
-        landmarks: ["كورنيش جدة", "البلد", "نافورة الملك فهد"]
-    },
-
     abha: {
         name: "أبها",
-        image: "https://source.unsplash.com/600x400/?abha",
+        image: "images/abha.jpg",
         description: "أبها مدينة جبلية جميلة في جنوب المملكة وتشتهر بأجوائها الباردة وطبيعتها.",
         landmarks: ["السودة", "قرية رجال ألمع", "منتزه عسير الوطني"]
+    },
+
+    ula: {
+        name: "العلا",
+        image: "images/ula.jpg",
+        description: "العلا منطقة تاريخية غنية بالآثار القديمة مثل مدائن صالح وجبل الفيل.",
+        landmarks: ["مدائن صالح", "جبل الفيل", "البلدة القديمة"]
+    },
+
+    khobar: {
+        name: "الخبر",
+        image: "images/khobar.jpg",
+        description: "الخبر مدينة ساحلية حديثة تقع على الخليج العربي وتتميز بالواجهة البحرية.",
+        landmarks: ["كورنيش الخبر", "شاطئ نصف القمر", "الواجهة البحرية"]
+    },
+
+    mecca: {
+        name: "مكة المكرمة",
+        image: "images/mecca.jpg",
+        description: "مكة المكرمة أقدس مدينة في الإسلام وتضم المسجد الحرام والكعبة المشرفة.",
+        landmarks: ["الكعبة المشرفة", "المسجد الحرام", "جبل عرفات"]
+    },
+
+    tabuk: {
+        name: "تبوك",
+        image: "images/tabuk.jpg",
+        description: "تبوك مدينة شمالية تتميز بطبيعتها وتاريخها ومعالمها المتنوعة.",
+        landmarks: ["قلعة تبوك", "وادي الديسة", "جبال اللوز"]
     }
 };
 
