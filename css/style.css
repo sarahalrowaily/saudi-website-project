@@ -214,29 +214,35 @@ footer {
 /* ===== DETAILS PAGE ===== */
 
 .details-page {
-    padding: 20px 40px;
+    width: 70%;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
 }
 
 /* الصورة الكبيرة */
 .cover-img {
     width: 100%;
-    height: 250px;
+    height: 260px;
     object-fit: cover;
     border-radius: 12px;
+    display: block;
     margin-bottom: 20px;
 }
 
 /* النص */
 .details-content {
-    max-width: 800px;
+    text-align: right;
 }
+
 
 /* مربع أخضر */
 .quick-box {
-    background: #e6f2ea;
-    padding: 15px;
+    background-color: #e5f3ea;
+    padding: 15px 20px;
     border-radius: 10px;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 /* المعالم */
@@ -245,15 +251,15 @@ footer {
 }
 
 /* معرض الصور */
-.gallery {
+.details-gallery {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     margin-top: 10px;
 }
 
-.gallery img {
-    width: 150px;
-    height: 100px;
+.details-gallery img {
+    width: 32%;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
 }
