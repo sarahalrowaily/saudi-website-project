@@ -21,16 +21,32 @@
 </header>
 
 <main>
-    <section id="place-details">
-        <h2 id="place-name">اسم المنطقة</h2>
+  <section class="details-page">
 
-        <img id="place-image" src="" alt="صورة المنطقة" width="400">
+    <!-- صورة كبيرة -->
+    <img id="place-image" class="cover-img">
 
+    <!-- النص -->
+    <div class="details-content">
+        <h2 id="place-name"></h2>
         <p id="place-description"></p>
 
-        <h3>أهم المعالم</h3>
+        <!-- معلومات سريعة -->
+        <div class="quick-box">
+            <h3>معلومات سريعة</h3>
+            <ul id="place-info"></ul>
+        </div>
+
+        <!-- المعالم -->
+        <h3>أبرز المعالم</h3>
         <ul id="place-landmarks"></ul>
-    </section>
+
+        <!-- معرض الصور -->
+        <h3>معرض الصور</h3>
+        <div id="place-gallery" class="gallery"></div>
+    </div>
+
+</section>
 </main>
 
 <footer>
