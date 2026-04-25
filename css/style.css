@@ -210,3 +210,50 @@ footer {
     font-size: 20px !important;
     font-weight: bold !important;
 }
+
+/* ===== DETAILS PAGE ===== */
+
+.details-page {
+    padding: 20px 40px;
+}
+
+/* الصورة الكبيرة */
+.cover-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* النص */
+.details-content {
+    max-width: 800px;
+}
+
+/* مربع أخضر */
+.quick-box {
+    background: #e6f2ea;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* المعالم */
+.details-content ul {
+    padding-right: 20px;
+}
+
+/* معرض الصور */
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
