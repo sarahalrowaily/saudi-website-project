@@ -7,8 +7,8 @@ body {
 
 /* ===== HEADER ===== */
 header {
-    width: 70%;
-    margin: 25px auto 0;
+    width: 100%;
+    margin: 0;
     background-color: #0f3d2e;
     color: white;
     padding: 18px 35px;
