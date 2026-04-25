@@ -15,7 +15,7 @@ header {
     box-sizing: border-box !important;
 
     display: flex !important;
-    flex-direction: row-reverse !important;
+    flex-direction: row !important;
     align-items: center !important;
     justify-content: space-between !important;
 }
