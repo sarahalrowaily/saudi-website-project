@@ -9,44 +9,38 @@
 <body>
 
 <header>
-    <h1>تفاصيل المنطقة</h1>
+    <div class="logo">اكتشف السعودية</div>
 
     <nav>
-       <a href="index.html">الرئيسية</a>
+        <a href="index.html">الرئيسية</a>
         <a href="regions.html">معرض المناطق</a>
         <a href="login.html">دخول المشرف</a>
         <button class="mode-btn" onclick="toggleMode()">الوضع الليلي</button>
     </nav>
-    
 </header>
 
 <main>
-  <section class="details-page">
+    <section class="details-page" id="place-details">
 
-    <!-- صورة كبيرة -->
-    <img id="place-image" class="cover-img">
+        <img id="place-image" class="cover-img" src="" alt="صورة المنطقة">
 
-    <!-- النص -->
-    <div class="details-content">
-        <h2 id="place-name"></h2>
-        <p id="place-description"></p>
+        <div class="details-content">
+            <h2 id="place-name"></h2>
+            <p id="place-description"></p>
 
-        <!-- معلومات سريعة -->
-        <div class="quick-box">
-            <h3>معلومات سريعة</h3>
-            <ul id="place-info"></ul>
+            <div class="quick-box">
+                <h3>معلومات سريعة</h3>
+                <ul id="place-info"></ul>
+            </div>
+
+            <h3>أبرز المعالم</h3>
+            <ul id="place-landmarks"></ul>
+
+            <h3>معرض الصور</h3>
+            <div id="place-gallery" class="details-gallery"></div>
         </div>
 
-        <!-- المعالم -->
-        <h3>أبرز المعالم</h3>
-        <ul id="place-landmarks"></ul>
-
-        <!-- معرض الصور -->
-        <h3>معرض الصور</h3>
-        <div id="place-gallery" class="gallery"></div>
-    </div>
-
-</section>
+    </section>
 </main>
 
 <footer>
@@ -54,6 +48,5 @@
 </footer>
 
 <script src="js/script.js"></script>
-
 </body>
 </html>
