@@ -166,6 +166,15 @@ function loadPlaceDetails() {
     document.getElementById("place-image").src = place.image;
     document.getElementById("place-description").textContent = place.description;
 
+    var infoList = document.getElementById("place-info");
+    infoList.innerHTML = "";
+
+    place.info.forEach(function(info) {
+        var item = document.createElement("li");
+        item.textContent = info;
+        infoList.appendChild(item);
+    });
+
     var list = document.getElementById("place-landmarks");
     list.innerHTML = "";
 
@@ -174,25 +183,17 @@ function loadPlaceDetails() {
         item.textContent = landmark;
         list.appendChild(item);
     });
+
+    var gallery = document.getElementById("place-gallery");
+    gallery.innerHTML = "";
+
+    place.gallery.forEach(function(imgSrc) {
+        var img = document.createElement("img");
+        img.src = imgSrc;
+        gallery.appendChild(img);
+    });
 }
 
 if (document.getElementById("place-details")) {
     loadPlaceDetails();
 }
-// معلومات سريعة
-var infoList = document.getElementById("place-info");
-infoList.innerHTML = "";
-place.info.forEach(function(i) {
-    var li = document.createElement("li");
-    li.textContent = i;
-    infoList.appendChild(li);
-});
-
-// معرض الصور
-var gallery = document.getElementById("place-gallery");
-gallery.innerHTML = "";
-place.gallery.forEach(function(img) {
-    var image = document.createElement("img");
-    image.src = img;
-    gallery.appendChild(image);
-});
