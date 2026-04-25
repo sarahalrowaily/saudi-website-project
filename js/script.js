@@ -31,47 +31,125 @@ function filterGallery() {
 }
 
 var places = {
-    riyadh: {
-        name: "الرياض",
-        image: "images/riyadh.jpg",
-        description: "الرياض هي عاصمة المملكة العربية السعودية وتجمع بين الحداثة والتاريخ.",
-        landmarks: ["برج المملكة", "المتحف الوطني", "الدرعية"]
-    },
+   riyadh: {
+    name: "الرياض",
+    image: "images/riyadh.jpg",
+    description: "الرياض هي عاصمة المملكة العربية السعودية وتجمع بين الحداثة والتاريخ.",
+    
+    info: [
+        "المنطقة: الوسطى",
+        "المناخ: صحراوي حار",
+        "تشتهر بـ: الأبراج والأسواق الحديثة"
+    ],
 
-    abha: {
-        name: "أبها",
-        image: "images/abha.jpg",
-        description: "أبها مدينة جبلية جميلة في جنوب المملكة.",
-        landmarks: ["السودة", "رجال ألمع", "منتزه عسير"]
-    },
+    landmarks: ["برج المملكة", "المتحف الوطني", "الدرعية"],
 
-    ula: {
-        name: "العلا",
-        image: "images/alula.jpg",
-        description: "العلا منطقة تاريخية تحتوي على آثار قديمة مثل مدائن صالح.",
-        landmarks: ["مدائن صالح", "جبل الفيل", "البلدة القديمة"]
-    },
+    gallery: [
+        "images/riyadh.jpg",
+        "images/riyadh2.jpg",
+        "images/riyadh3.jpg"
+    ]
+},
 
-    khobar: {
-        name: "الخبر",
-        image: "images/khobar.jpg",
-        description: "الخبر مدينة ساحلية حديثة تقع على الخليج العربي.",
-        landmarks: ["كورنيش الخبر", "شاطئ نصف القمر", "الواجهة البحرية"]
-    },
+mecca: {
+    name: "مكة المكرمة",
+    image: "images/mecca.jpg",
+    description: "أقدس مدينة في الإسلام وتضم المسجد الحرام والكعبة المشرفة.",
 
-    mecca: {
-        name: "مكة المكرمة",
-        image: "images/mecca.jpg",
-        description: "مكة المكرمة أقدس مدينة في الإسلام.",
-        landmarks: ["الكعبة المشرفة", "المسجد الحرام", "جبل عرفات"]
-    },
+    info: [
+        "المنطقة: الغربية",
+        "المناخ: حار",
+        "تشتهر بـ: الحج والعمرة"
+    ],
 
-    tabuk: {
-        name: "تبوك",
-        image: "images/tabuk.jpg",
-        description: "تبوك مدينة في شمال المملكة تتميز بطبيعتها.",
-        landmarks: ["قلعة تبوك", "وادي الديسة", "جبال اللوز"]
-    }
+    landmarks: ["الكعبة المشرفة", "المسجد الحرام", "جبل عرفات"],
+
+    gallery: [
+        "images/mecca.jpg",
+        "images/mecca2.jpg",
+        "images/mecca3.jpg"
+    ]
+},
+
+khobar: {
+    name: "الخبر",
+    image: "images/khobar.jpg",
+    description: "مدينة ساحلية حديثة تقع على الخليج العربي.",
+
+    info: [
+        "المنطقة: الشرقية",
+        "المناخ: معتدل نسبيًا",
+        "تشتهر بـ: الواجهة البحرية"
+    ],
+
+    landmarks: ["كورنيش الخبر", "شاطئ نصف القمر", "الواجهة البحرية"],
+
+    gallery: [
+        "images/khobar.jpg",
+        "images/khobar2.jpg",
+        "images/khobar3.jpg"
+    ]
+},
+
+abha: {
+    name: "أبها",
+    image: "images/abha.jpg",
+    description: "مدينة جبلية جميلة في جنوب المملكة.",
+
+    info: [
+        "المنطقة: عسير",
+        "المناخ: معتدل وبارد",
+        "تشتهر بـ: الطبيعة والجبال"
+    ],
+
+    landmarks: ["السودة", "رجال ألمع", "منتزه عسير"],
+
+    gallery: [
+        "images/abha.jpg",
+        "images/abha2.jpg",
+        "images/abha3.jpg"
+    ]
+},
+
+ula: {
+    name: "العلا",
+    image: "images/alula.jpg",
+    description: "منطقة تاريخية غنية بالآثار القديمة.",
+
+    info: [
+        "المنطقة: المدينة المنورة",
+        "المناخ: صحراوي",
+        "تشتهر بـ: مدائن صالح"
+    ],
+
+    landmarks: ["مدائن صالح", "جبل الفيل", "البلدة القديمة"],
+
+    gallery: [
+        "images/alula.jpg",
+        "images/alula2.jpg",
+        "images/alula3.jpg"
+    ]
+},
+
+tabuk: {
+    name: "تبوك",
+    image: "images/tabuk.jpg",
+    description: "مدينة شمالية تتميز بطبيعتها.",
+
+    info: [
+        "المنطقة: الشمالية",
+        "المناخ: معتدل",
+        "تشتهر بـ: الجبال والوديان"
+    ],
+
+    landmarks: ["وادي الديسة", "قلعة تبوك", "جبال اللوز"],
+
+    gallery: [
+        "images/tabuk.jpg",
+        "images/tabuk2.jpg",
+        "images/tabuk3.jpg"
+    ]
+}
 };
 
 function loadPlaceDetails() {
@@ -101,3 +179,20 @@ function loadPlaceDetails() {
 if (document.getElementById("place-details")) {
     loadPlaceDetails();
 }
+// معلومات سريعة
+var infoList = document.getElementById("place-info");
+infoList.innerHTML = "";
+place.info.forEach(function(i) {
+    var li = document.createElement("li");
+    li.textContent = i;
+    infoList.appendChild(li);
+});
+
+// معرض الصور
+var gallery = document.getElementById("place-gallery");
+gallery.innerHTML = "";
+place.gallery.forEach(function(img) {
+    var image = document.createElement("img");
+    image.src = img;
+    gallery.appendChild(image);
+});
