@@ -98,6 +98,78 @@ button {
     color: #111;
 }
 
+/* 1. الخلفية العامة للصفحة وحاوية الإدارة */
+body.dark-mode.admin-body, 
+body.dark-mode .dashboard-container, 
+body.dark-mode .content-manager {
+    background-color: #121826 !important; /* لون داكن جداً للخلفية */
+    color: #e0e6ed !important;
+}
+
+/* 2. الهيدر (الجزء العلوي) */
+body.dark-mode header {
+    background-color: #1a2234 !important;
+    border-bottom: 1px solid #2d3748;
+    color: #ffffff;
+}
+
+/* 3. تعديل الهيدر الأخضر (الذي ظهر في الصورة) */
+body.dark-mode .logo, 
+body.dark-mode header {
+    background: #0f3d2e !important; /* درجة أغمق من الأخضر لتناسب الوضع الليلي */
+}
+
+/* 4. الجدول والحاوية الخاصة به */
+body.dark-mode .table-wrapper {
+    background-color: #1a2234 !important;
+    border: 1px solid #2d3748;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+body.dark-mode .admin-table {
+    background-color: transparent !important;
+    color: #e0e6ed !important;
+}
+
+/* 5. نصوص الجدول والعناوين */
+body.dark-mode .admin-table th {
+    background-color: #2d3748 !important;
+    color: #ffffff !important;
+    border-bottom: 2px solid #4a5568;
+}
+
+body.dark-mode .admin-table td {
+    border-bottom: 1px solid #2d3748 !important;
+    color: #cbd5e0 !important;
+}
+
+/* 6. الأزرار (تعديل بسيط لتبدو بارزة في الظلام) */
+body.dark-mode .add-btn {
+    background-color: #28a745 !important;
+    border: none;
+}
+
+body.dark-mode .edit-link {
+    background-color: #2d3748 !important;
+    color: #63b3ed !important;
+    border: 1px solid #4a5568;
+}
+
+/* 7. الفوتر (أسفل الصفحة) */
+body.dark-mode footer {
+    background-color: #0a0e17 !important;
+    color: #718096 !important;
+    border-top: 1px solid #1a2234;
+}
+
+/* 8. نصوص الوصف والعناوين */
+body.dark-mode h2, 
+body.dark-mode p,
+body.dark-mode .desc-cell {
+    color: #a0aec0 !important;
+}
+
 /* ===== HERO ===== */
 .hero {
     display: flex;
@@ -262,4 +334,286 @@ footer {
     height: 120px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* Login page */
+.login-page {
+    background-color: #f5f7f6;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; 
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.login-card-header {
+    background-color: #0f3d2e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.login-card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #0f3d2e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1e5631;
+}
+
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* Dashboard page */
+.admin-body { background-color: #f8fafc; }
+
+.dashboard-container { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
+
+.content-manager h2 { color: #0f3d2e; border-bottom: 2px solid #0f3d2e; display: inline-block; padding-bottom: 5px; }
+
+.actions-bar { text-align: left; margin-bottom: 20px; }
+
+.add-btn { background-color: #0f3d2e; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+
+.success-alert { background-color: #d1fae5; color: #065f46; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+
+
+.table-wrapper { background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
+
+.admin-table { width: 100%; border-collapse: collapse; text-align: right; }
+
+.admin-table th { background-color: #f1f5f9; padding: 15px; color: #475569; font-size: 14px; }
+
+.admin-table td { padding: 15px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
+
+.desc-cell { max-width: 300px; color: #64748b; }
+
+
+.controls { display: flex; gap: 8px; justify-content: center; }
+
+.edit-link { background-color: #1e5631; color: white; padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 12px; }
+
+.delete-link { background-color: #991b1b; color: white; padding: 5px 12px; border-radius: 4px; text-decoration: none; font-size: 12px; }
+
+.logout-btn { background-color: #991b1b; color: white; padding: 7px 15px; border-radius: 8px; text-decoration: none; }
+
+
+/*  Add page */
+.add-page-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f4f7f6;
+}
+
+.add-card {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: right;
+}
+
+.add-card h3 {
+    color: #0f3d2e;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.gallery-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.gallery-section h4 {
+    margin-top: 0;
+    color: #0f3d2e;
+    font-size: 16px;
+}
+
+.save-btn {
+    width: 100%;
+    background-color: #0f3d2e;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #1e5631;
+}
+
+/* Edit Page*/
+.edit-page-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.edit-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 25px;
+    direction: rtl;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0f3d2e;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.status-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.preview-item {
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+.preview-images img {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.thumb-large {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.thumb-grid img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.delete-btn-outline {
+    width: 100%;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid #991b1b;
+    color: #991b1b;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mb-5 { margin-bottom: 8px; }
+
+
+.alert-success {
+   background-color: #d1fae5; color: #065f46; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
