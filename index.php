@@ -1,23 +1,27 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+include("config.php");
+?>
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>اكتشف السعودية</title>
+    <title>اكتشف السعودية | الرئيسية</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>اكتشف السعودية</h1>
-
+    <div class="logo">اكتشف السعودية</div>
     <nav>
-       <a href="index.html">الرئيسية</a>
+        <a href="index.php">الرئيسية</a>
         <a href="regions.php">معرض المناطق</a>
         <a href="login.php">دخول المشرف</a>
         <button class="mode-btn" onclick="toggleMode()">الوضع الليلي</button>
     </nav>
-    
 </header>
 
 <main>
@@ -25,33 +29,32 @@
         <div class="hero-text">
             <h2>موقع ثقافي تفاعلي للتعريف بالمملكة</h2>
             <p>
-               <br>استكشف مناطق المملكة العربية السعودية وتعرف على أهم 
-            المعالم التاريخية والثقافية، اختر منطقة من المعرض للانتقال إلى التفاصيل
+               استكشف مناطق المملكة العربية السعودية وتعرف على أهم 
+               المعالم التاريخية والثقافية. اختر منطقة من المعرض للانتقال إلى التفاصيل.
             </p>
-
             <a href="regions.php" class="explore-btn">ابدأ الاستكشاف</a>
         </div>
 
         <div class="hero-box">
-            <h2>👋 أهلاً بك</h2>
+            <h2> أهلاً بك👋</h2>
             <p>ابدأ رحلتك لاكتشاف مناطق المملكة</p>
         </div>
     </section>
 
     <section class="info-cards">
         <div class="info-card">
-            <h3>📍 التفاصيل</h3>
-            <p>صفحة تعرض وصفًا ومعلومات لكل منطقة.</p>
+            <h3>🎯 الهدف</h3>
+            <p>تقديم معلومات موثوقة ومدارة ديناميكياً عن مناطق المملكة.</p>
         </div>
 
         <div class="info-card">
             <h3>🗺️ المناطق</h3>
-            <p>تصفح مناطق المملكة المختلفة بسهولة.</p>
+            <p>تصفح مناطق المملكة المختلفة المضافة عبر لوحة التحكم بسهولة.</p>
         </div>
 
         <div class="info-card">
-            <h3>🎯 الهدف</h3>
-            <p>تقديم معلومات مفيدة عن مناطق المملكة.</p>
+            <h3>📍 التفاصيل</h3>
+            <p>صفحة تعرض وصفاً ومعلومات لكل منطقة مستخرجة من قاعدة البيانات.</p>
         </div>
     </section>
 </main>
