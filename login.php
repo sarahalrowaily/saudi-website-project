@@ -1,26 +1,31 @@
 <?php
-include("config.php");
+session_start();
+include("config.php"); 
+
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
 
+    $query = "SELECT * FROM admins WHERE username = '$username' AND password = '$password'";
+    $result = mysqli_query($conn, $query);
 
-    if ($user == "admin" && $pass == "123456") {
-        $_SESSION['admin'] = "admin";
+    if (mysqli_num_rows($result) == 1) {
+        $_SESSION['admin_logged_in'] = true;
+        $_SESSION['admin_user'] = $username;
         header("Location: dashboard.php");
         exit();
     } else {
-        $error = "اسم المستخدم أو كلمة المرور غير صحيحة";
+        $error = "اسم المستخدم أو كلمة المرور غير صحيحة!";
     }
 }
 ?>
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تسجيل دخول المشرف</title>
+    <title>تسجيل دخول المشرف | اكتشف السعودية</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <header>
     <div class="logo">لوحة المشرف</div>
     <nav>
-        <a href="index.html">زيارة الموقع</a>
+        <a href="index.php">زيارة الموقع</a>
         <button class="mode-btn" onclick="toggleMode()">الوضع الليلي</button>
     </nav>
 </header>
@@ -37,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-card">
         <div class="login-card-header">تسجيل دخول المشرف</div>
         <div class="login-card-body">
-            <form method="POST">
+            <form method="POST" action="login.php">
                 <div class="form-group">
                     <label>اسم المستخدم</label>
                     <input type="text" name="username" placeholder="مثال: admin" required>
@@ -50,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <button type="submit" class="login-btn">دخول</button>
 
-                <?php if($error): ?>
+                <?php if($error != ""): ?>
                     <p style="color:red; text-align:center; margin-top:10px; font-size:14px;"><?php echo $error; ?></p>
                 <?php endif; ?>
             </form>
