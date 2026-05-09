@@ -36,7 +36,7 @@ include("config.php");
         </div>
 
         <div class="hero-box">
-            <h2> أهلاً بك👋</h2>
+            <h2> أهلاً بك حنين 👋</h2>
             <p>ابدأ رحلتك لاكتشاف مناطق المملكة</p>
         </div>
     </section>
