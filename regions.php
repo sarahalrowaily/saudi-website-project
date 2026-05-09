@@ -18,6 +18,7 @@ $total_results = mysqli_num_rows($result);
             display: block;
         }
         
+        
     </style>
 </head>
 <body>
