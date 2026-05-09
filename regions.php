@@ -51,6 +51,7 @@ $total_results = mysqli_num_rows($result);
         </div>
     </section>
 
+    
     <p class="result-count">عدد النتائج: <span id="resultCount"><?php echo $total_results; ?></span></p>
 
     <section class="gallery" id="galleryContainer">
